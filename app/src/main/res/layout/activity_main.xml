@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tabHost"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:background="@color/lightGray"
+            android:layout_marginTop="10dp">
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/tab1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:layout_gravity="center"
+                android:weightSum="1">
+
+                <Switch
+                    android:text="@string/tab1Switch1"
+                    android:textSize="@dimen/globalTextSize"
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="left"
+                    android:id="@+id/switch1"
+                    tools:ignore="NewApi"
+                    android:layout_marginBottom="15dp"/>
+
+                <Switch
+                    android:text="@string/tab1Switch2"
+                    android:textSize="@dimen/globalTextSize"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/switch2"
+                    tools:ignore="NewApi"
+                    android:layout_marginBottom="15dp"/>
+
+                <Switch
+                    android:text="@string/tab1Switch3"
+                    android:textAlignment="inherit"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="@dimen/globalTextSize"
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/switch3"
+                    tools:ignore="NewApi"
+                    android:layout_marginBottom="30dp"/>
+
+                <LinearLayout
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "@string/textForSeek1"
+                        android:textSize="@dimen/globalTextSize"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_weight="0.87"/>
+
+                    <ToggleButton
+                        android:gravity="center"
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/toggleButton1" />
+
+                    </LinearLayout>
+
+                <SeekBar
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:max="100"
+                    android:progress="0"
+                    android:id="@+id/seekBar1"
+                    android:layout_marginBottom="5dp"/>
+
+                <LinearLayout
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "@string/textForSeek2"
+                        android:textSize="@dimen/globalTextSize"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_weight="0.87"/>
+
+                    <ToggleButton
+                        android:gravity="center"
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/toggleButton2" />
+
+                </LinearLayout>
+
+                <SeekBar
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:max="100"
+                    android:progress="0"
+                    android:id="@+id/seekBar2"
+                    android:layout_marginBottom="5dp"/>
+
+                <LinearLayout
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text = "@string/textForSeek3"
+                        android:textSize="@dimen/globalTextSize"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_weight="0.87"/>
+
+                    <ToggleButton
+                        android:gravity="center"
+
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/toggleButton3" />
+
+                </LinearLayout>
+
+                <SeekBar
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:max="100"
+                    android:progress="0"
+                    android:id="@+id/seekBar3"
+                    android:layout_marginBottom="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                
+                <EditText
+                    android:layout_width="320dp"
+                    android:layout_height="350dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/lightGray"
+                    android:hint="@string/terminalHint">
+                </EditText>
+
+                <Button
+                    android:id="@+id/sendTerminal"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/sendButton">
+
+                </Button>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/findText"
+                    android:textSize="@dimen/globalTextSize"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginTop="10dp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/deviceID"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/deviceID"
+                    android:layout_marginTop="10dp">
+
+                </EditText>
+
+                <Button
+                    android:id="@+id/connectDevice"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/connectDevice"
+                    android:layout_marginTop="10dp">
+
+                </Button>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</TabHost>

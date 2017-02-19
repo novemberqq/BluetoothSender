@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BluetoothSender</string>
+    <string name="deviceID">c0:18:85:ac:6b:00</string>
+    <string name="tabLabel1">Плюшки</string>
+    <string name="tabLabel2">Терминал</string>
+    <string name="tabLabel3">Настройки</string>
+    <string name="tab1Switch1">Реле1</string>
+    <string name="tab1Switch2">Реле2</string>
+    <string name="tab1Switch3">Реле3</string>
+    <string name="textForSeek1">ШИМ-1</string>
+    <string name="textForSeek2">ШИМ-2</string>
+    <string name="textForSeek3">ШИМ-3</string>
+    <string name="terminalHint">Введите текст сообщения</string>
+    <string name="sendButton">Отправить</string>
+    <string name="findText">Для подключения введите ID устройства</string>
+    <string name="connectDevice">Подключится</string>
+</resources>
