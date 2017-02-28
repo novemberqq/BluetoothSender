@@ -195,7 +195,8 @@
                     android:gravity="center_horizontal"
                     android:layout_gravity="center_horizontal"
                     android:background="@color/lightGray"
-                    android:hint="@string/terminalHint">
+                    android:hint="@string/terminalHint"
+                    android:id="@+id/editSend">
                 </EditText>
 
                 <Button
